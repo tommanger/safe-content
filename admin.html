@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Place</title>
+    <link rel="stylesheet" href="lib/css/bootstrap.css">
+    <link rel="stylesheet" href="css/admin.css">
+</head>
+
+<body onload="init()">
+    <ul class="nav nav-pills">
+        <li class="nav-item">
+            <a class="nav-link active" onclick="goToMain()">Return</a>
+        </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
+                aria-expanded="false">Sort By:</a>
+            <div class="dropdown-menu">
+
+                <option class="dropdown-item" value="name" onclick="onSetSort(this.value)">Name</option>
+                <div class="dropdown-divider"></div>
+                <option class="dropdown-item" value="last-login" onclick="onSetSort(this.value)">Last login</option>
+
+            </div>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+            <img width="20px" data-btn="table" onclick="choiceDisplay(this.dataset.btn)" src="img/btn_table.png" alt="">
+        </li>
+        <li class="nav-item">
+            <img width="20px" data-btn="cards" onclick="choiceDisplay(this.dataset.btn)" src="img/btn_cards.png">
+        </li>
+
+        <li class="nav-item">
+            <a class="nav-link disabled" href="#">Hello Admin</a>
+        </li>
+    </ul>
+
+
+
+    <div class="container">
+        <div class="choice-display">
+
+        </div>
+
+    </div>
+    <div class="render-display"></div>
+    </div>
+
+    <script src="lib/js/popper.js"></script>
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/js/bootstrap.js"></script>
+    <script src="lib/js/bootstrap.bundle.js"></script>
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <script src="js/util-service.js"></script>
+    <script src="js/user-service.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+
+</html>

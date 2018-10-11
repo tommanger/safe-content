@@ -1,0 +1,51 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-container{
+    background-color: aquamarine;
+    width: 552px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+form{
+    display: flex;
+    align-items: center;
+
+}
+input,button{
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    border: 0;
+    background-color: rgb(212, 255, 241);
+    margin: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16x;
+}
+button{
+    background-color: rgb(68, 211, 163);
+}
+button:hover{
+    background-color: rgb(212, 255, 241);
+    cursor: pointer;
+}
+h1{
+    color: aquamarine;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 0;
+}
+.wrong{
+    display: none;
+}

@@ -1,0 +1,22 @@
+
+
+.container-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+
+.choice-display img {
+    width: 20px;
+    height: 20px;
+    
+}
+.choice-display img:hover{
+    background-color: gainsboro;
+    cursor: pointer;
+    width: 22px;
+    height: 22px;
+}
+
